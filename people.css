@@ -4,7 +4,7 @@
 /* people  ARCHIVE */
 
 body.post-type-archive-people .venue-block img {
-	width:150px;
+	width: 150px;
 	height:auto;
 	position: relative;
 	z-index: 2;
@@ -41,27 +41,49 @@ body.post-type-archive-people h1.entry-title {
 width: auto;
 
 
-font-size: 32px;
+font-size: 28px;
 
 
-font-size: 3.2rem;
+font-size: 2.8rem;
 
 margin-top:1rem;
 
 
-position: absolute;
-
-
-left: 150px;
-top: 1rem;
+position: relative;
 margin-left: 0;
-padding: 0.5rem 0.5rem 0.5rem 0.7rem !important;
 
+
+padding: 0.5rem 0.7rem 0.5rem 0.7rem !important;
+
+display: block;
+float:left;
+clear:both;
+
+
+max-width: 100%;
+
+white-space: nowrap;
+
+}
+
+body.post-type-archive-people h1.entry-title:after {
+	/* content:""; */
+	/* margin-bottom:20px; */
+	display: block;
+	/* background: #fff; */
+	/* clear: both; */
+	/* position: relative; */
+	/* width: auto; */
+	/* height: 2px; */
 }
 
 body.post-type-archive-people div.venue-block a hgroup {
 	transition:opacity 1s ease;
 	
+	position: absolute;
+	/* width: auto; */
+	top: 20px;
+	left: 152px;
 }
 body.post-type-archive-people div.venue-block:hover hgroup {
 	opacity:0.5;
@@ -71,7 +93,7 @@ body.post-type-archive-people h2.job-description {
 
 
 
-/* float: right; */
+float: left;
 
 
 
@@ -92,21 +114,29 @@ color:#FFFFFF;
 margin-left:0rem;
 
 
-
-
-left: 150px;
-
-
-
-
-top: 6rem;
 width:auto;
-position:absolute;
 
 
 
 
-padding: 0.5rem 0.5rem 0.5rem 0.7rem;
+position: relative;
+
+
+
+
+display: block;
+
+
+
+
+clear: both;
+
+
+
+width: auto;
+
+
+
 }
 
 body.post-type-archive-people div.people-quote {

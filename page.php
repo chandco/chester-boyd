@@ -43,7 +43,7 @@ foreach ($attachments as $attachment):
 </div>	     
             
 
-	     </div>     
+	   
 	<div id="primary" class="site-content">
 		
        

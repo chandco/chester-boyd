@@ -664,11 +664,11 @@ class recent_posts extends WP_Widget {
 		foreach( $hotPosts as $post ) { 
 			
 			
-		$output .= "<div class=\"whats-hot-block\">
-	          <a href=\"" . get_permalink($post->ID) . "\"> <div class=\"whats-hot-image\">
-	          	 " . get_the_post_thumbnail($post->ID,'thumbnail') . " <h3>" . get_the_title($post->ID) . "</h3>
-	          </div></a>
-	        </div>";
+		$output .= "<a href=\"" . get_permalink($post->ID) . "\"> <div class=\"whats-hot-block\">
+	          <div class=\"whats-hot-image\">
+	          	" . get_the_post_thumbnail($post->ID,'old-blog-thumb') . " <h3>" . get_the_title($post->ID) . "</h3>
+	          </div>
+	        </div></a>";
 	          
  	}
 	$output .= "</div>";
@@ -689,11 +689,11 @@ register_widget('recent_posts');
 		foreach( $hotPosts as $post ) { 
 		
 			
-		$output .= "<div class=\"whats-hot-block\">
-	          <a href=\"" . get_permalink($post->ID) . "\"> <div class=\"whats-hot-image\">
-	          	 " . get_the_post_thumbnail($post->ID,'thumbnail') . " <h3>" . get_the_title($post->ID) . "</h3>
-	          </div></a>
-	        </div>";
+		$output .= "<a href=\"" . get_permalink($post->ID) . "\"><div class=\"whats-hot-block\">
+	           <div class=\"whats-hot-image\">
+	          	 " . get_the_post_thumbnail($post->ID,'old-blog-thumb') . " <h3>" . get_the_title($post->ID) . "</h3>
+	          </div>
+	        </div></a>";
 	          
  	}
 	return $output;

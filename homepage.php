@@ -12,7 +12,7 @@
 get_header(); ?>
 
 
-<div id="homepage-panels" class="cycle-slideshow" data-cycle-speed="600" data-cycle-timeout="4000" data-cycle-fx="fade" data-cycle-slides="div" data-cycle-prev="#Prev" data-cycle-next="#Next">
+<div id="homepage-panels" class="cycle-slideshow" data-cycle-speed="600" data-cycle-timeout="4000" data-cycle-fx="fade" data-cycle-slides="div">
 
 
 <?php
@@ -38,7 +38,6 @@ get_header(); ?>
 	        </div>
 	          
 		<?php } ?>
-        <button id="Next">Next</button><button id="Prev">Next</button>
 </div>
 
 	<div id="primary" class="site-content">
@@ -86,10 +85,16 @@ get_header(); ?>
  
   <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ITA_GROUP.png" class="ita-group"  width="200" />
   
- <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ITA_LOGO_DARKBG.png" class="ita-logo"  width="200" />
- <P>To allow us to put our all into what we do best, delivering fine food and seamless service, all enquiries and reservations for Chester Boyd and our venues are handled by our dedicated sales partner, ITA*.</P>
+  <div class="ita-logo">
+ <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ITA_LOGO_DARKBG.png" width="200" />
  
-<p style='text-align:right'><a href='<?php echo get_site_url(); ?>/ita/' class='ita-cta'>Read More...</a></p>
+ <div class="ita-cta">
+ To allow us to put our all into what we do best, delivering fine food and seamless service, all enquiries and reservations for Chester Boyd and our venues are handled by our dedicated sales partner, ITA*.
+
+ 
+<a href='<?php echo get_site_url(); ?>/ita/'>Read More...</a>
+</div>
+ </div>
  
  </section>
         
