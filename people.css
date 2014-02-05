@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* people  ARCHIVE */
+
+body.post-type-archive-people .venue-block img {
+	width:150px;
+	height:auto;
+	position: relative;
+	z-index: 2;
+	border: solid 3px #FFF;
+}
+
+body.post-type-archive-people .entry-header {
+	
+	position:relative;
+	display:block;
+
+	margin: 0;
+}
+
+body.post-type-archive-people article.people {
+	width: 46%;
+	padding:1%;
+	float:left;
+	/* margin-bottom: 2rem; */
+	margin: 0 2% 0rem 0;
+}
+
+body.post-type-archive-people img.wp-post-image {
+
+z-index:5;
+
+top:0
+left:0;
+border:none;
+}
+
+body.post-type-archive-people h1.entry-title {
+
+width: auto;
+
+
+font-size: 32px;
+
+
+font-size: 3.2rem;
+
+margin-top:1rem;
+
+
+position: absolute;
+
+
+left: 150px;
+top: 1rem;
+margin-left: 0;
+padding: 0.5rem 0.5rem 0.5rem 0.7rem !important;
+
+}
+
+body.post-type-archive-people div.venue-block a hgroup {
+	transition:opacity 1s ease;
+	
+}
+body.post-type-archive-people div.venue-block:hover hgroup {
+	opacity:0.5;
+}
+
+body.post-type-archive-people h2.job-description {
+
+
+
+/* float: right; */
+
+
+
+
+
+font-size: 16px;
+
+
+
+
+font-size: 1.6rem;
+font-family:'Gill Sans W04 Light',Helvetica,Arial,sans-serif;
+line-height:1.2rem;
+padding:1rem;
+font-weight:bold;
+background:#F00;
+color:#FFFFFF;
+margin-left:0rem;
+
+
+
+
+left: 150px;
+
+
+
+
+top: 6rem;
+width:auto;
+position:absolute;
+
+
+
+
+padding: 0.5rem 0.5rem 0.5rem 0.7rem;
+}
+
+body.post-type-archive-people div.people-quote {
+	float:right;
+	width:35%;
+	padding: 10px;
+	padding:1rem;
+	
+	/* position: absolute; */
+	right: 2rem;
+	top: 0;
+	font-style: italic;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+body.post-type-archive-people div.people-quote h2 {
+ color:#999;
+ font-size:1.6rem;
+ line-height:1.5rem;
+ 
+
+ font-weight: normal;
+}
+
+
+/* PEOPLE SINGLE */
+
+
+
+body.single-people .entry-header {
+	
+	position:relative;
+	display:block;
+
+}
+
+
+body.single-venues header.entry-header hgroup, body.single-people header.entry-header hgroup {
+	position:absolute;
+	width: 100%;
+	top: 62%;
+	left:0;
+	z-index: 200;
+}
+
+body.single-venues h1.entry-title {
+
+width: auto;
+font-size:36px;
+font-size:3.6rem;
+margin-top:1rem;
+margin-left: 0;
+padding: 0.5rem 1.5rem 0.5rem 0.7rem !important;
+
+margin-bottom: 0;
+
+}
+
+body.single-venues h2.caption {
+
+font-size:16px;
+font-size:1.6rem;
+font-family:'Gill Sans W04 Light',Helvetica,Arial,sans-serif;
+
+
+width: auto;
+margin-left: 0;
+padding: 0.5rem 1.5rem 0.5rem 0.7rem;
+background:#f00;
+color:#fff;
+
+float: none;
+
+
+display: block;
+
+position: absolute;
+
+}
+
+
+body.single-people h1.entry-title {
+
+width: auto;
+font-size:36px;
+font-size:3.6rem;
+margin-top:1rem;
+margin-left: 0;
+padding: 0.5rem 1.5rem 0.5rem 0.7rem !important;
+
+margin-bottom: 0;
+
+}
+
+body.single-people h2.job-description {
+
+font-size:16px;
+font-size:1.6rem;
+font-family:'Gill Sans W04 Light',Helvetica,Arial,sans-serif;
+width: auto;
+margin-left: 0;
+padding: 0.5rem 1.5rem 0.5rem 0.7rem;
+background:#f00;
+color:#fff;
+position: absolute;
+float: none;
+}
+
+body.single-people div.people-quote {
+	width: 31%;
+	
+	padding: 1% 1% 1% 7%;
+	bottom: 10%;
+	right: 0;
+	position: relative;
+	float: right;
+	margin: 0 0 10px 20px;
+	z-index: 2222;
+	background: rgba(153, 153, 153, 1);
+	color: #FFF;  
+	font-size:20px;
+	font-size: 2rem;
+	font-weight: normal;  
+	font-family: 'BodoniSeventytwoITCW02- 737181';
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+body.single-people div.people-quote:after {
+	content:'"';
+	font-size:84px;
+	display:block;
+	margin:0 4px 4px 0;
+	position:absolute;
+	z-index:-1;
+	top: -25px;
+	left:0;
+	color:RGBA(255,255,255,0.5);
+	font-family:Arial;
+	font-style:italic;
+}
+
+body.single-people div.people-quote h2 {
+ color:#999;
+ font-size:1.6rem;
+ line-height:1.5rem;
+ 
+
+ font-weight: normal;
+ margin: -10px 0 0 0;
+}

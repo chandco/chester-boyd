@@ -1,0 +1,619 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+h1 a, h2 a {
+	text-shadow:none;
+}
+
+a h1, a h2 {
+	text-shadow:none;
+}
+
+body.page-template-homepage-php .site-content {
+	
+	width: 100%;	
+}
+
+#homepage-panels hgroup {
+	position:absolute;
+	top: 54%;
+	left: 0;
+	max-width: 40%;}
+
+#homepage-panels a {
+	color:#ffffff;
+}
+#homepage-panels h2 {
+	background:#f00;
+	display:inline-block;
+	color:#fff;
+	padding:0.6rem 2rem 0.6rem 1rem;
+	font-size: 48px;
+	font-size: 4.8rem;
+	font-weight: normal;
+}
+
+#homepage-panels h3 {
+	background:#f00;
+	display:block;
+	color:#fff;
+	padding:0.6rem 1rem 0.6rem 1rem;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-family:'Gill Sans W04 Light';
+	
+}
+
+#homepage-panels div:first-child {
+	opacity:1;
+}
+
+#homepage-panels div:nth-child(n+1) {
+	/* opacity:0; */
+}
+
+
+#ita-intro {
+	background: #272727;
+	padding: 1%;
+	padding-top: 14px;
+	padding-top: 1.4rem;
+	position:relative;
+	margin-bottom: 0;
+	overflow: hidden;
+	color: #E6E6E6;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+}
+
+
+
+#ita-intro .ita-group {
+	float:left;
+	width: 240px;
+	height:auto;
+	margin: 0 10px 0 0;
+}
+
+
+#ita-intro .ita-logo {
+	width: 85px;
+	
+	margin: 0 0 10px 0;
+	margin: 0 0 1rem 0;
+}
+
+#ita-intro .ita-cta {
+	background: #f00;
+	display: inline-block;
+	text-align: right;
+	color: #fff;
+	padding: 6px;
+	padding: 0.6rem;
+	font-size: 24px;
+	font-size: 2.4rem;
+	margin: 10px 0 0 0;
+	margin: 1rem 0 0 0;
+	font-family: 'BodoniSeventytwoITCW02- 737181';
+}
+
+#ita-intro .ita-cta .ita-logo {
+	height: 24px;
+	height: 2.4rem;
+	width:auto !important;
+	display:inline-block;
+	vertical-align: bottom;
+	margin: 0;
+}
+
+
+
+#blog-panels h3 {
+	text-align:center;
+	display:block;
+	color: #E03535;
+	font-size:2rem;
+	margin-bottom: 20px;
+}
+#blog-panels .whats-hot-block h3 {
+	font-family: 'Gill Sans W04 Light';
+	background:#f00;
+	display:block;
+	position:absolute;
+	left: -100%;
+	top: 10%;
+	color:#fff;
+	padding:0.6rem 1rem 0.6rem 1rem;
+	font-size: 16px;
+	font-size: 1.6rem;
+	max-width: 60%;
+	font-weight: normal;
+	text-align: left;
+	margin: 0;
+	transition: all 0.5s ease;
+	opacity: 1 !important;
+	z-index: 222;
+}
+
+
+
+#blog-panels .whats-hot-block:hover h3 {
+	left:0%;
+}
+
+#blog-panels h3 {
+	/* background:#777171; */
+}
+
+
+.whats-hot-image img {
+	display:block;
+}
+
+.whats-hot-image {
+	z-index:2;
+}
+
+#homepage-panels .whats-hot-caption h3 {
+	/* background:#f00; */
+	/* display:block; */
+	/* width:auto; */
+	/* position:absolute; */
+	/* top: 54%; */
+	left: 50%;
+	/* margin-left: -25%; */
+	/* color:#fff; */
+	/* padding:0.6rem 2rem 0.6rem 1rem; */
+	/* font-size:3.2rem; */
+	/* max-width: 70%; */
+}
+
+#blog-panels .whats-hot-caption {
+	background: RGBA(255,0,0,1);
+	font-weight:bold;
+	color:#fff;
+	font-family:'BodoniSeventytwoITCW02- 737181';
+	/* width:100%; */
+	height: 100%;
+	position:absolute;
+	margin:0;
+	padding:0;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	z-index: 1;
+}
+
+.widget-area #blog-panels {
+	background:none;
+	margin:0;
+	padding:0;
+}
+
+footer #blog-panels h2 {
+	color:#000;
+	font-size: 20px;
+	font-size: 2rem;
+	line-height: 1.2rem;
+	background: #F00;
+	color: #FFFFFF;
+	padding: 1rem 2rem 1rem 3rem;
+	margin-left: -3rem;
+	position: relative;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+footer #blog-panels {
+	background:none;
+	margin:0;
+	padding:0;
+	width:100%;
+	
+	overflow: visible;
+	clear: both;
+}
+
+footer #blog-panels:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+footer #blog-panels .whats-hot-block {
+	height: 105px;
+}
+
+footer #blog-panels .whats-hot-block h3 {
+	font-size: 11px;
+	font-size: 1.1rem;
+	line-height: 14px;
+	line-height: 1.4rem;
+}
+
+
+
+.widget-area #blog-panels .whats-hot-block {
+	width:100%;
+	float:none;
+	clear:both;
+	margin: 1rem 0 !important;
+	height:135px;
+}
+
+
+
+
+
+
+
+#homepage-panels a, #blog-panels a {
+	text-shadow:none;
+}
+
+#homepage-panels .whats-hot-caption h3, #blog-panels .whats-hot-caption h3 {
+	display:block;
+	background:none;
+	padding: 1rem 1rem 1rem 1rem;
+	position:static;
+}
+
+#homepage-panels .whats-hot-excerpt {
+	position:relative;
+	margin-top:0.5rem;
+	color:#D9d9d9;
+}
+
+
+.whats-hot-caption h3 {
+	top:0;
+}
+#blog-panels .whats-hot-excerpt {
+	position:relative;
+	margin-top:0.5rem;
+	color:#D9d9d9;
+}
+
+
+#homepage-panels .whats-hot-image, #blog-panels .whats-hot-image {
+
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	color:#fff;
+	font-family:'BodoniSeventytwoITCW02- 737181';
+	display:block;
+	
+
+	width:100%;
+	
+	
+
+	height: 100%;
+
+	max-height: 138px;
+	
+	top:0;
+	left:0;
+	transition: opacity 0.5s;
+-webkit-transition: opacity 0.5s; /* Safari */
+	
+
+	overflow: hidden;
+
+}
+
+#homepage-panels .whats-hot-image img.wp-post-image, #blog-panels .whats-hot-image img.wp-post-image {
+	
+
+	margin: auto;
+	
+
+
+}
+
+
+#homepage-panels h3 a, #homepage-panels h3 a:hover, #blog-panels h3 a, #blog-panels h3 a:hover  {
+	color:#fff;
+}
+
+#blog-panels .whats-hot-block {
+	display: block;
+	width: 31%;
+	margin:0;
+	position:relative;
+	float: left;
+	overflow: hidden;
+	height: 170px;
+	background: #000000;
+	border-bottom: solid 3px #f00;
+	box-shadow: -3px 2px 2px rgba(0,0,0,0.5);
+	-webkit-box-shadow: -3px 2px 2px rgba(0,0,0,0.5);
+}
+
+#blog-panels .whats-hot-block img {
+	position: absolute;
+	width: auto;
+	height: 100%;
+	left:0;
+	top:0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	transition: all 0.5s ease;
+	max-width: none;
+	min-width:100%;
+}
+
+#blog-panels .whats-hot-block:hover img {
+	
+	-webkit-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	opacity:0.5;
+}
+
+#homepage-panels {
+	/* float:left; */
+	width: 68%;
+	overflow:hidden;
+}
+
+#blog-panels div.whats-hot-block {
+	margin-bottom: 30px;
+}
+
+#blog-panels div.whats-hot-block:after {
+	content: "";
+	display:block;
+	position:absolute;
+	width: 90%;
+	height: 84%;
+	top:0px;
+	left:0px;
+	color: #ffffff;
+	max-height: 100%;
+	padding: 5%;
+	z-index: 0;
+}
+
+
+
+#blog-panels {
+	
+    width: 96%;
+    padding: 1.8%;
+    margin: 1%;
+    overflow: hidden;
+}
+
+#blog-panels h3.whats-new {
+	position:static;
+	margin-bottom: 1.5rem;
+	width: 98%;
+	padding: 1%;
+	background: #000;
+	text-align: center;
+	font-family: 'BodoniSeventytwoITCW02- 737181';
+	font-size: 2rem;
+	letter-spacing: 0.15rem;
+	max-width: 100%;
+	font-weight: normal;
+	color: #bbb;
+}
+
+#homepage-carousel {
+	width:65%;
+	margin:0 5% 4rem 0;
+	float:left;
+	color:#FFF;
+	background:#F00;
+	min-height:300px;
+}
+
+
+
+/* VENUES */
+
+body.post-type-archive-venues .entry-header .entry-title, body.single-venues .entry-header .entry-title {
+}
+
+/* end venues */
+
+.ita-link {
+	display:block;
+	background:#000000;
+	text-align:center;
+}
+
+.ita-link a {
+	color:#FED600;
+	font-size: 20px;
+	font-size: 2rem;
+	font-weight: bold;
+	text-shadow: none;
+	display: block;
+	padding: 1rem;
+}
+
+.ita-link a:hover {
+    color:#FFFFFF;
+    }
+
+.ita-link img {
+	border:none;
+	height:2rem;
+	width:auto;
+	vertical-align: middle;
+}
+
+
+
+
+body.page-template-homepage-php div.site-content { 
+margin-top:0;
+}
+
+	
+
+/* hover states */
+
+#homepage-panels .whats-hot-image:hover {
+	opacity:0.6;
+
+}
+
+#blog-panels .whats-hot-image:hover img {
+	opacity:0.6;
+
+}
+
+	
+
+
+
+#blog-panels .whats-hot-block:nth-child(3) {
+    margin: 0 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div#main {
+	/* padding-top:20px; */
+	padding: 0;
+}
+
+body.page-template-homepage-php div#main {
+}
+
+#blog-panels div.whats-hot-excerpt {
+	margin-top:20px;;
+}
+
+
+
+
+#homepage-panels {
+	width: 100%;;
+	max-width: 1007px;
+	top: -20px;
+	max-height: 404px;
+	position:relative;
+	margin-bottom: -20px;
+	margin-bottom: -2rem;
+}
+
+body.archive #homepage-panels {
+	position:relative;
+	top: -3.1rem;
+}
+
+#homepage-panels .homepage-title img {
+	width: 100%;
+	height: 100%;
+}
+
+#homepage-intro {
+	width: 100%;
+	display: block;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-family: inherit;
+	color: #666666;
+	clear: both;
+	position: relative;
+	overflow: hidden;
+}
+
+#homepage-intro p {
+	margin-bottom: 8px;
+	
+}
+#homepage-intro:after {
+}
+
+
+
+
+body.post-type-archive-people img.wp-post-image {
+	width: auto;
+}
+
+body.post-type-archive-people article {
+ height: 335px;	
+ min-height: 335px;
+ border-bottom: 2px solid #f00;
+}
+
+
+/**//**/@media screen and (max-width:600px) {
+
+#homepage-panels {
+	
+	overflow: visible;
+}
+
+#ita-intro {
+    font-size: 24px;
+    width: 92%;
+    padding: 4%;
+}
+
+
+
+#ita-intro .ita-group {
+	width:98%;
+	float:none;
+	clear:both;
+	position:relative;
+	margin:auto;
+}
+
+
+#ita-intro .ita-logo {
+    width: 35%;
+    position: relative;
+    margin: 0 10px 120px;
+    display: block;
+    float: left;
+}
+
+#ita-intro p {
+	display:block;
+}
+#ita-intro .ita-cta {
+    clear: both;
+    width: 90%;
+    padding: 2%;
+	
+    text-align: center;
+    top:10px;
+    margin: 10px auto;
+    display: block;
+}
+
+#ita-intro .ita-cta .ita-logo {
+}
+
+
+}
+
