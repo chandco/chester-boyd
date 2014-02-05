@@ -38,6 +38,7 @@ get_header(); ?>
 	        </div>
 	          
 		<?php } ?>
+        <button id="Next">Next</button><button id="Prev">Next</button>
 </div>
 
 	<div id="primary" class="site-content">
