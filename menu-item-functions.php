@@ -45,11 +45,14 @@ function output_menu_items($atts)
 		while ($query->have_posts()) :
 				$query->the_post();
 
-	
+		$large = wp_get_attachment_image_src( get_post_thumbnail_id(), 'widescreen-large' );
+		$url = $large['0'];
 		$output .= "<li>";
 		$output .= 		"<span>";
+		$output .= 		"<a href='" . $url . "' rel='lightbox'>";
 		$output .= 			get_the_post_thumbnail();
 		$output .= 			"<h3>" . get_the_title() . "</h3>";
+		$output .= 		"</a>";
 		$output .= 		"</span>";
 		$output .= 			"<p>" . get_the_content() . "</p>";	
 		$output .= "</li>";
