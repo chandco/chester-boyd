@@ -57,6 +57,7 @@ function output_menu_items($atts)
 	
 		endwhile;
 		$output .= "</ul>";
+		wp_reset_postdata();
 	
 	return $output;
 	else:
