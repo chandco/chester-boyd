@@ -7,7 +7,14 @@ function output_menu_items($atts)
 	if ($atts["show"]):
 	
 	// loop through this category and output based on order
-	
+	if ($atts["id"])
+	{
+		$postid = $atts["id"];
+	} else {
+		
+		global $post;
+		$postid = get_the_ID();	
+	}
 	$args = array(
 		'post_type' => 'menu-items',
 		'meta_key' => 'wpcf-food-order',
@@ -33,6 +40,7 @@ function output_menu_items($atts)
 		$query = new WP_Query( $args );
 		// The Loop
 		
+		$output = $args;
 		while ($query->have_posts()) :
 				$query->the_post();
 
@@ -49,10 +57,10 @@ function output_menu_items($atts)
 		endwhile;
 	
 	
-	echo $output;
+	return $output;
 	else:
 	// can't do it without a show
-	echo "";
+	return "";
 	endif;
 	
 	
