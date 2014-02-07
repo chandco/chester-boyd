@@ -49,10 +49,15 @@ function output_menu_items($atts)
 		$url = $large['0'];
 		$output .= "<li>";
 		$output .= 		"<span>";
-		$output .= 		"<a href='" . $url . "' rel='lightbox'>";
-		$output .= 			get_the_post_thumbnail();
-		$output .= 			"<h3>" . get_the_title() . "</h3>";
-		$output .= 		"</a>";
+		
+		if (has_post_thumbnail()):
+			$output .= 		"<a href='" . $url . "' data-lightbox='menu-items' title='" . get_the_title() . "'>";
+			$output .= 			get_the_post_thumbnail();
+			$output .= 			"<h3>" . get_the_title() . "</h3>";
+			$output .= 		"</a>";
+		else: 
+			$output .= 			"<h3>" . get_the_title() . "</h3>";
+		endif;
 		$output .= 		"</span>";
 		$output .= 			"<p>" . get_the_content() . "</p>";	
 		$output .= "</li>";
