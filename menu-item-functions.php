@@ -17,8 +17,8 @@ function output_menu_items($atts)
 	}
 	$args = array(
 		'post_type' => 'menu-item',
+		'orderby' => 'meta_value',
 		'meta_key' => 'wpcf-food-order',
-		'orderby' => 'meta_value_num',
 		'order' => 'ASC',
 	'nopaging' => 'true',
 'posts_per_page' => -1,

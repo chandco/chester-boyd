@@ -207,10 +207,12 @@ body:after {
   font-weight: bold;
   line-height: 1em;
   background: #e31936;
-  position: relative;
+  position: absolute;
   /* top: 52px; */
-  top: -56px;
+  bottom: 12%;
+  max-width: 500px;
   font-family: "BodoniSeventytwoITCW02- 737181";
   color: #FFF;
   padding: 10px 20px 10px 8px;
+  display: block !important;
 }
