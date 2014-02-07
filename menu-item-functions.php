@@ -51,7 +51,7 @@ function output_menu_items($atts)
 		$output .= 		"<span>";
 		
 		if (has_post_thumbnail()):
-			$output .= 		"<a href='" . $url . "' data-lightbox='menu-items' title='" . get_the_title() . "'>";
+			$output .= 		"<a href='" . $url . "' data-lightbox='menu-items' title='" . get_the_title() . " - " . get_the_content() . "'>";
 			$output .= 			get_the_post_thumbnail();
 			$output .= 			"<h3>" . get_the_title() . "</h3>";
 			$output .= 		"</a>";
