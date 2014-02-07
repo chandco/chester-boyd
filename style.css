@@ -396,7 +396,7 @@ color: #FFFFFF;
 
 
 
-background-color: #FF0000;
+background-color: #e31936;
 
 
 
@@ -642,7 +642,7 @@ transition: border 0.8s ease;
 
 .gallery .gallery-icon a:hover img 
 {
-  border: 2px solid #ff0000 !important;
+  border: 2px solid #e31936 !important;
 }
 
 
@@ -719,7 +719,7 @@ float:left;
 
 	width: 95%;
 	display:block;
-	color:#f00;	
+	color:#e31936;	
 	position:relative;
 	padding: 5px;
 	line-height:1.1rem;
@@ -853,7 +853,7 @@ outline:none;
 
 
 
-color: #FF0000;
+color: #e31936;
 
 
 
@@ -1388,7 +1388,7 @@ footer[role="contentinfo"] a:hover {
 
 
 
-color:#f00;
+color:#e31936;
 }
 
 /**/.entry-meta {
@@ -1427,7 +1427,7 @@ width: 100%;
 
 
 
-border-bottom: 3px solid #F00;
+border-bottom: 3px solid #e31936;
 
 }
 
@@ -1439,7 +1439,7 @@ font-size:20px;
 font-size: 2rem;
 line-height:1.2;
 font-weight:bold;
-background:#F00;
+background:#e31936;
 color:#FFFFFF;
 padding: 1rem 2rem 1rem 2rem;
 
@@ -1463,7 +1463,7 @@ font-size:20px;
 font-size: 2rem;
 line-height:1.2;
 font-weight:bold;
-background:#F00;
+background:#e31936;
 color:#FFFFFF;
 padding: 1rem 2rem 1rem 4rem;
 position:relative;
@@ -2787,7 +2787,7 @@ body.post-type-archive-venues article.venues .edit-link {
 	bottom:5px;
 	right:5px;
 	color:#fff !important;
-	background:#f00;
+	background:#e31936;
 	padding:5px;
 	
 }
@@ -2831,7 +2831,7 @@ font-family:'Gill Sans W04 Light',Helvetica,Arial,sans-serif;
 line-height:1.2rem;
 padding:1rem;
 font-weight:bold;
-background:#F00;
+background:#e31936;
 color:#FFFFFF;
 margin-left:0rem;
 left:0%;
@@ -2941,7 +2941,7 @@ top:0;
 }
 
 .sidebar-navigation li a:hover {
-	background:#FF0000;
+	background:#e31936;
 	color:#FFFFFF;
 	z-index:2;
 	margin: -5px;
@@ -3192,7 +3192,7 @@ color:#444;
 
 
 
-color: #FF0000;
+color: #e31936;
 font-weight:bold;
 }
 

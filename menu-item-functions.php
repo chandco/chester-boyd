@@ -16,11 +16,11 @@ function output_menu_items($atts)
 		$postid = get_the_ID();	
 	}
 	$args = array(
-		'post_type' => 'menu-items',
+		'post_type' => 'menu-item',
 		'meta_key' => 'wpcf-food-order',
 		'orderby' => 'meta_value_num',
 		'order' => 'ASC',
-		'nopaging' => 'true',
+	'nopaging' => 'true',
 'posts_per_page' => -1,
 		'meta_query' => array(
 	       		array(
@@ -40,22 +40,23 @@ function output_menu_items($atts)
 		$query = new WP_Query( $args );
 		// The Loop
 		
-		$output = $args;
+		$output = print_r($args,true);
+		$output = "<ul class='food-menu-items'>";
 		while ($query->have_posts()) :
 				$query->the_post();
 
 	
-		$output .= "<div class='food-menu-item'>";
+		$output .= "<li>";
 		$output .= 		"<span>";
-		$output .= 			the_post_thumbnail();
-		$output .= 			"<h3>" . the_title() . "</h3>";
+		$output .= 			get_the_post_thumbnail();
+		$output .= 			"<h3>" . get_the_title() . "</h3>";
 		$output .= 		"</span>";
-		$output .= 			"<p>" . the_content() . "</p>";	
-		$output .= "</div>";
+		$output .= 			"<p>" . get_the_content() . "</p>";	
+		$output .= "</li>";
 	
 	
 		endwhile;
-	
+		$output .= "</ul>";
 	
 	return $output;
 	else:
