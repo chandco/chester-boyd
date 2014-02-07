@@ -49,10 +49,10 @@ function output_menu_items($atts)
 		endwhile;
 	
 	
-	return $output;
+	echo $output;
 	else:
 	// can't do it without a show
-	return "";
+	echo "";
 	endif;
 	
 	
