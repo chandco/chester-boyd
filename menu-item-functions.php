@@ -40,17 +40,25 @@ function output_menu_items($atts)
 		$query = new WP_Query( $args );
 		// The Loop
 		
-		$output = print_r($args,true);
-		$output = "<ul class='food-menu-items'>";
+		//$output = print_r($args,true);
+		
+		if ($args["list"] != 'true')
+		{
+			$classes = 'food-menu-items list-only';
+		} else {
+			$classes = 'food-menu-items list-only';
+		}
+		$output = "<ul class='" . $classes . "'>";
 		while ($query->have_posts()) :
 				$query->the_post();
-
+		
+		
 		$large = wp_get_attachment_image_src( get_post_thumbnail_id(), 'widescreen-large' );
 		$url = $large['0'];
 		$output .= "<li>";
 		$output .= 		"<span>";
 		
-		if (has_post_thumbnail()):
+		if (has_post_thumbnail() and $args["list"] != 'true'):
 			$output .= 		"<a href='" . $url . "' data-lightbox='menu-items' title='" . get_the_title() . " - " . get_the_content() . "'>";
 			$output .= 			get_the_post_thumbnail();
 			$output .= 			"<h3>" . get_the_title() . "</h3>";
