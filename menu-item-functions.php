@@ -42,7 +42,7 @@ function output_menu_items($atts)
 		
 		//$output = print_r($args,true);
 		
-		if ($args["list"] != 'true')
+		if ($args["list"] == 'true')
 		{
 			$classes = 'food-menu-items list-only';
 		} else {
