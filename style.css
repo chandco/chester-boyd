@@ -1,6 +1,7 @@
 @import url("homepage.css");
 @import url("food.css");
 @import url("people.css");
+@import url("link-styles.css");
 
 
 body.page-id-2 #homepage-panels:before {
