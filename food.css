@@ -201,7 +201,18 @@ body.post-type-archive-food div.venue-block:hover img {
 ul.food-menu-items {
 	display:block;
 	width:100%;
+	clear:both;
 }
+
+ul.food-menu-items:after {
+	content:"";
+	display:block;
+	float:none;
+	clear:both;
+	width:100%;
+	height:1px;
+}
+
 ul.food-menu-items li {
 	
 	width:48%;
@@ -228,8 +239,24 @@ ul.food-menu-items li span {
 	clear:both;
 	position: relative;
 	list-style: none;
+	background: #FFFFFF;;
+}
+
+ul.food-menu-items.list-only li span {
+	width:100%;
+	height: auto;
+	overflow: hidden;
+	display:block;
+	clear:both;
+	position: relative;
+	list-style: none;
 	
 	background: #FFFFFF;;
+}
+
+ul.food-menu-items.list-only li span h3 {
+	width: 100%;
+	line-height:30px;
 }
 
 ul.food-menu-items li span img {
@@ -251,7 +278,7 @@ ul.food-menu-items li span img:hover {
 }
 
 ul.food-menu-items li span h3 {
-	position:absolute;
+	position: relative;
 	background:#e31936;
 	bottom:0;
 	left:0;
