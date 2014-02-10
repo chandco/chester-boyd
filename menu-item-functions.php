@@ -130,7 +130,7 @@ function output_menu_items($atts)
 		$output .= loop_through_menu_query( $args );
 	
 	}
-	
+	return $output;
 	else:
 	// can't do it without a show
 	return "";
