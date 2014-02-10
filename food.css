@@ -279,14 +279,14 @@ ul.food-menu-items li span img:hover {
 
 ul.food-menu-items li span h3 {
 	position: relative;
-	background:#e31936;
+	background: #FFFFFF;
 	bottom:0;
 	left:0;
 	padding: 5px 10px;
-	padding: 0.5rem 1rem;
+	padding: 0;
 	width:auto;
 	z-index:2;
-	color:#fff;
+	color: #e31936;
 	font-size: 20px;
 	font-size: 2rem;
 	margin: 0;
