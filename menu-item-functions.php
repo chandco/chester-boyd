@@ -62,7 +62,7 @@ function output_menu_items($atts)
 	$term = get_term_by('slug', $atts["show"], 'menu-item-category');
 	
 	
-	$children = get_term_children( $term->id, 'menu-item-category' );
+	$children = get_term_children( $term->term_id, 'menu-item-category' );
 	
 	
 	$output = var_dump($children);
