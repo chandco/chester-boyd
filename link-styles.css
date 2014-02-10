@@ -9,8 +9,10 @@ a[href*="http://www.itavenues.co.uk"]:hover:after {
 	background:#e31936;
 	color:#fff;
 	margin-top:-30px;
-	margin-left:100px;
+	margin-left:10px;
 	width:auto;
 	max-width:200px;
+	padding:5px;
+	box-shadow:-2px 2px 2px 0px #666;
 }
 
