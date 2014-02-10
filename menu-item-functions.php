@@ -1,42 +1,8 @@
 <?php
 
 
-function output_menu_items($atts)
+function loop_through_menu_query( $args )
 {
-	
-	if ($atts["show"]):
-	
-	// loop through this category and output based on order
-	if ($atts["id"])
-	{
-		$postid = $atts["id"];
-	} else {
-		
-		global $post;
-		$postid = get_the_ID();	
-	}
-	$args = array(
-		'post_type' => 'menu-item',
-		'orderby' => 'meta_value',
-		'meta_key' => 'wpcf-food-order',
-		'order' => 'ASC',
-	'nopaging' => 'true',
-'posts_per_page' => -1,
-		'meta_query' => array(
-	       		array(
-           			'key' => '_wpcf_belongs_food_id',
-					'value' => $postid,
-					'compare' => '='
-					)
-			),
-			'tax_query' => array(
-				array(
-				'taxonomy' => 'menu-item-category',
-				'field' => 'slug',
-				'terms' => $atts["show"]
-				))
-							
-		);
 		$query = new WP_Query( $args );
 		// The Loop
 		
@@ -75,13 +41,100 @@ function output_menu_items($atts)
 		$output .= "</ul>";
 		wp_reset_postdata();
 	
-	return $output;
+		return $output;
+}
+
+function output_menu_items($atts)
+{
+	
+	if ($atts["show"]):
+	
+	// loop through this category and output based on order
+	if ($atts["id"])
+	{
+		$postid = $atts["id"];
+	} else {
+		
+		global $post;
+		$postid = get_the_ID();	
+	}
+	
+	$term = get_term_by('slug', $atts["show"], 'menu-item-category');
+	
+	
+	$children = get_term_children( $term->id, 'menu-item-category' );
+	
+	$output = "";
+	if ($children)
+	{
+		foreach ($children as $child)
+		{
+			// one arg loop
+			// first show the category heading
+			$output .= "<h2>" . $child->name . "</h2>";
+	
+			$args = array(
+			'post_type' => 'menu-item',
+			'orderby' => 'meta_value',
+			'meta_key' => 'wpcf-food-order',
+			'order' => 'ASC',
+		'nopaging' => 'true',
+	'posts_per_page' => -1,
+			'meta_query' => array(
+					array(
+						'key' => '_wpcf_belongs_food_id',
+						'value' => $postid,
+						'compare' => '='
+						)
+				),
+				'tax_query' => array(
+					array(
+					'taxonomy' => 'menu-item-category',
+					'field' => 'slug',
+					'terms' => $child->slug
+					))
+								
+			);
+		
+	
+		$output .= loop_through_menu_query( $args );
+		}
+	} else {
+		
+		// one arg loop
+	
+		$args = array(
+		'post_type' => 'menu-item',
+		'orderby' => 'meta_value',
+		'meta_key' => 'wpcf-food-order',
+		'order' => 'ASC',
+	'nopaging' => 'true',
+'posts_per_page' => -1,
+		'meta_query' => array(
+	       		array(
+           			'key' => '_wpcf_belongs_food_id',
+					'value' => $postid,
+					'compare' => '='
+					)
+			),
+			'tax_query' => array(
+				array(
+				'taxonomy' => 'menu-item-category',
+				'field' => 'slug',
+				'terms' => $atts["show"]
+				))
+							
+		);
+		
+	
+		$output .= loop_through_menu_query( $args );
+	
+	}
+	
 	else:
 	// can't do it without a show
 	return "";
 	endif;
-	
-	
 	
 }
 
