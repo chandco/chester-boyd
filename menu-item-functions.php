@@ -65,8 +65,7 @@ function output_menu_items($atts)
 	$children = get_term_children( $term->term_id, 'menu-item-category' );
 	
 	
-	$output = var_dump($children);
-	//$output = "";
+	$output = "";
 	if ($children)
 	{
 		foreach ($children as $child)
