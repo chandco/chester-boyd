@@ -1,14 +1,14 @@
 <?php
 
 
-function loop_through_menu_query( $args )
+function loop_through_menu_query( $args, $list = false )
 {
 		$query = new WP_Query( $args );
 		// The Loop
 		
 		//$output = print_r($args,true);
 		
-		if ($args["list"] == 'true')
+		if ($list)
 		{
 			$classes = 'food-menu-items list-only';
 		} else {
@@ -24,7 +24,7 @@ function loop_through_menu_query( $args )
 		$output .= "<li>";
 		$output .= 		"<span>";
 		
-		if (has_post_thumbnail() and $args["list"] != 'true'):
+		if (has_post_thumbnail() and $list == false):
 			$output .= 		"<a href='" . $url . "' data-lightbox='menu-items' title='" . get_the_title() . " - " . get_the_content() . "'>";
 			$output .= 			get_the_post_thumbnail();
 			$output .= 			"<h3>" . get_the_title() . "</h3>";
@@ -100,7 +100,7 @@ function output_menu_items($atts)
 			);
 		
 	
-		$output .= loop_through_menu_query( $args );
+		$output .= loop_through_menu_query( $args, $args["list"] );
 		}
 	} else {
 		
@@ -130,7 +130,7 @@ function output_menu_items($atts)
 		);
 		
 	
-		$output .= loop_through_menu_query( $args );
+		$output .= loop_through_menu_query( $args, $args["list"] );
 	
 	}
 	return $output;
