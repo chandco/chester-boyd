@@ -71,9 +71,11 @@ function output_menu_items($atts)
 	{
 		foreach ($children as $child)
 		{
+			$child_term = get_term_by( 'id', $child, 'menu-item-category' );
+
 			// one arg loop
 			// first show the category heading
-			$output .= "<h2>" . $child->name . "</h2>";
+			$output .= "<h2>" . $child_term->name . "</h2>";
 	
 			$args = array(
 			'post_type' => 'menu-item',
@@ -93,7 +95,7 @@ function output_menu_items($atts)
 					array(
 					'taxonomy' => 'menu-item-category',
 					'field' => 'slug',
-					'terms' => $child->slug
+					'terms' => $child_term->slug
 					))
 								
 			);
