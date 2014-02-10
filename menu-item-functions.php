@@ -46,7 +46,7 @@ function loop_through_menu_query( $args, $list = false )
 
 function output_menu_items($atts)
 {
-	
+	$list = ($args["list"] == "true") ? true : false;
 	if ($atts["show"]):
 	
 	// loop through this category and output based on order
@@ -100,7 +100,7 @@ function output_menu_items($atts)
 			);
 		
 	
-		$output .= loop_through_menu_query( $args, $args["list"] );
+		$output .= loop_through_menu_query( $args, $list );
 		}
 	} else {
 		
@@ -130,7 +130,7 @@ function output_menu_items($atts)
 		);
 		
 	
-		$output .= loop_through_menu_query( $args, $args["list"] );
+		$output .= loop_through_menu_query( $args, $list );
 	
 	}
 	return $output;
