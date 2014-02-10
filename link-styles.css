@@ -2,15 +2,15 @@
 /* CSS Document */
 
 
-a[href*="http://www.itavenues.co.uk"]:after {
+a[href*="http://www.itavenues.co.uk"]:hover:after {
 	content:"ITA* is the dedicated sales partner for Chester Boyd";
 	position:absolute;
 	z-index:2;
-	background:#fed600;
+	background:#e31936;
 	color:#fff;
-	margin-top:30px;
+	margin-top:-30px;
 	margin-left:100px;
-	width:100px;
-	height:30px;
+	width:auto;
+	max-width:200px;
 }
 
