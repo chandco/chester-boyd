@@ -46,7 +46,7 @@ function output_menu_items($atts)
 		{
 			$classes = 'food-menu-items list-only';
 		} else {
-			$classes = 'food-menu-items list-only';
+			$classes = 'food-menu-items';
 		}
 		$output = "<ul class='" . $classes . "'>";
 		while ($query->have_posts()) :
