@@ -580,7 +580,7 @@ body.page-template-homepage-php div#main {
 
 body.archive #homepage-panels {
 	position:relative;
-	top: -3.1rem;
+	/* top: -3.1rem; */
 }
 
 #homepage-panels .homepage-title img {
