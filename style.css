@@ -3632,12 +3632,13 @@ body.homepage #blog-panels {
 
 #blog-panels .whats-hot-block, .widget-area #blog-panels .whats-hot-block {
 	width: 98%;
+	max-width: 430px;
 	float: none;
 	text-align: center;
 	overflow: visible;;
-	display: inline-block;
-	margin: 10px auto !important;
-	height: auto;
+	display: block;
+	margin: auto;
+	height: 264px;
 	left: 0;
 	right: 0;
 	position: relative;
@@ -3645,17 +3646,22 @@ body.homepage #blog-panels {
 
 	
 #blog-panels .whats-hot-block .whats-hot-image {
+	position: absolute;
 	overflow:visible;
-	height: auto;
-	width: 100%;
-	display: inline;
+	height: 264px;
+	width: 430px;
+	display: block;
+	max-width: 430px;
 }
 
 #blog-panels .whats-hot-block .whats-hot-image img {
-	width:100%;
+	width: 430px;
+	max-width: 100%;
+	min-width: 0;
 	margin:0;
-	height:auto;
-	position: static;
+	height: 264px;
+	position: absolute;
+	min-height: 0;
 }
 
 #blog-panels .whats-hot-block h3 {
@@ -3672,7 +3678,9 @@ body.homepage #blog-panels {
 
 
 #blog-panels .whats-hot-block:nth-child(3) {
-	margin: 10px;
+	margin: auto;
+	display: block;
+	margin-bottom: 30px;
 }
 
 header.entry-header hgroup {
