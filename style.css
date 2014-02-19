@@ -1696,6 +1696,10 @@ list-style:decimal outside;
 
 
 margin:0 0 0 36px;
+
+
+
+
 margin:0 0 0 2.571428571rem;
 }
 
@@ -3487,14 +3491,14 @@ html, body {
 	padding:0;
 }
 
-body.page-id-2 #homepage-panels:before { 
-	height: 80px;
-	width: 100px;
-}
-
 .entry-content {
 	/* padding:20px; */
 	
+}
+
+.entry-content li, .comment-content li, .mu_register li
+{
+	margin:0;
 }
 
 ul.food-menu-items li {
@@ -3562,7 +3566,7 @@ div.site {
 .widget-area ul.sidebar-navigation {
 	width: 90%;
 	position: relative;
-	margin: auto;
+	margin: 20px auto;
 }
 
 .widget-area #blog-panels {
@@ -3572,9 +3576,16 @@ div.site {
 	
 }	
 
+.widget-area .tagcloud a {
+	font-size:20px !important;
+	display:block;
+	margin:10px 10px 10px 15px;
+}
+
 body.homepage #blog-panels .whats-hot-block {
 	height:200px !important;
 	overflow:hidden;
+	
 	
 }
 
