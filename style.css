@@ -3521,6 +3521,7 @@ body.post-type-archive-people h1.entry-title {
 	font-size:26px;
 	font-size:1.8rem;
 	margin: 0;
+	top: 0;
 }
 
 body.post-type-archive-people h2.job-description {
@@ -3533,8 +3534,9 @@ body.post-type-archive-people h2.job-description {
 body.post-type-archive-people img.wp-post-image {
 	margin: 0;
 	float:none;
-	position:relative;
+	position: static;
 	left:0;
+	display: inline-block;
 	right:0;
 	
 }
@@ -3677,7 +3679,6 @@ header.entry-header hgroup {
 	position:static !important;
 	top: 0;
 	overflow: hidden;
-	margin: -5px 0 16px 0;
 }
 
 h1.entry-title {
