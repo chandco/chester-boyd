@@ -3440,7 +3440,6 @@ body.post-type-archive-venues article.venues {
 
 body.post-type-archive-venues .venue-block hgroup {
 	position:absolute !important;
-	overflow: visible;
 }
 
 
@@ -3462,15 +3461,8 @@ body.post-type-archive-venues article.venues:hover img {
 }
 
 article.venues .venue-block h1.entry-title {
-	font-size: 30px;
-	font-size: 2.0em;
-	padding: 0.5rem;
-}
-
-body.post-type-archive-venues h2.caption {
-	font-size: 16px;
-	font-size: 1.0em;
-	padding: 0.5rem;
+	font-size:24px;
+	font-size:2.4rem;
 }
 
 body.post-type-archive-venues .entry-content {

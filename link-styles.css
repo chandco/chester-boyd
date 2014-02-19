@@ -5,7 +5,7 @@
 a[href*="http://www.itavenues.co.uk"]:not(.no-hover):hover:after {
 	content:"ITA* is the dedicated sales partner for Chester Boyd";
 	position:absolute;
-	z-index:2;
+	z-index:5555;
 	background:#e31936;
 	color:#fff;
 	margin-top:-30px;
@@ -16,3 +16,12 @@ a[href*="http://www.itavenues.co.uk"]:not(.no-hover):hover:after {
 	box-shadow:-2px 2px 2px 0px #666;
 }
 
+@media screen and (max-width:600px) {
+	
+	
+	a[href*="http://www.itavenues.co.uk"]:hover:after {
+		content:"";
+		display:none;
+	}
+	
+}
