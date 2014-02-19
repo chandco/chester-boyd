@@ -3413,6 +3413,17 @@ body.single-people header.entry-header hgroup h1 {
 
 /**//**/@media screen and (max-width:600px) {
 	
+
+#homepage-panels span#next, #homepage-panels span#prev {
+	height:100%;
+	top:0;
+}
+
+#homepage-panels span#prev {
+	left:0;
+	right:inherit;
+}
+
 	
 .widget-area .whats-hot-block img {
 	display:none;
