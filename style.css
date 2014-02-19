@@ -3414,7 +3414,11 @@ body.single-people header.entry-header hgroup h1 {
 
 
 /**//**/@media screen and (max-width:600px) {
-	
+
+
+.entry-content h2, .comment-content h2, .mu_register h2 {
+	font-size:28px;
+}	
 
 #homepage-panels span#next, #homepage-panels span#prev {
 	height:100%;
