@@ -3665,7 +3665,7 @@ body.homepage #blog-panels {
 	position: absolute;
 	overflow:visible;
 	height: 264px;
-	width: 430px;
+	width: 100%;
 	display: block;
 	max-width: 430px;
 }
