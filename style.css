@@ -3597,6 +3597,11 @@ div.site {
 	overflow-x: hidden;
 }
 
+.archive-meta {
+	font-size:18px;
+	line-height:22px;
+}
+
 #homepage-panels hgroup h2 {
 	font-size: 36px;
 	padding: 2px;
@@ -3665,7 +3670,7 @@ body.homepage #blog-panels {
 	position: absolute;
 	overflow:visible;
 	height: 264px;
-	width: 100%;
+	width: 430px;
 	display: block;
 	max-width: 430px;
 }
