@@ -1154,7 +1154,7 @@ h3.menu-toggle {
 }
 
 ul.nav-menu.toggled-on{
-	width: 98%;
+	width: 100%;
 	margin: 10px 0 20px 0;
 	border: solid 1px #333;
 	padding:0;
@@ -3617,6 +3617,8 @@ footer[role="contentinfo"] {
 
 ul.toggled-on li a {
 	font-size:1.2rem;
+	color: #FFFFFF;
+	background: #e31936;
 }
 
 div.site {
