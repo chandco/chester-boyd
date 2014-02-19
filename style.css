@@ -1696,10 +1696,6 @@ list-style:decimal outside;
 
 
 margin:0 0 0 36px;
-
-
-
-
 margin:0 0 0 2.571428571rem;
 }
 
@@ -3491,14 +3487,56 @@ html, body {
 	padding:0;
 }
 
-.entry-content {
-	/* padding:20px; */
-	
+body.page-id-2 #homepage-panels:before { 
+	height: 80px;
+	width: 100px;
 }
 
-.entry-content li, .comment-content li, .mu_register li
-{
-	margin:0;
+
+body.post-type-archive-people article.people {
+	width:100%;
+	clear:both;
+	float: none;
+	display:block;
+	margin: auto;
+	height: auto;
+}
+
+body.post-type-archive-people article.people div.entry-content {
+	display:block;
+	float:none;
+	clear:both;
+}
+
+
+body.post-type-archive-people article.people .venue-block {
+	clear:both;
+	float:none;
+	/* text-align: center; */
+	margin-top: 30px;
+	padding: 0;
+}
+
+body.post-type-archive-people h1.entry-title {
+	font-size:26px;
+	font-size:1.8rem;
+	margin: 0;
+}
+
+body.post-type-archive-people h2.job-description {
+	font-size:16px;
+	font-size:0.9rem;
+	margin-top: 0;
+}
+
+
+body.post-type-archive-people img.wp-post-image {
+	margin: 0;
+	float:none;
+	position:relative;
+	left:0;
+	right:0;
+	
 }
 
 ul.food-menu-items li {
@@ -3566,7 +3604,7 @@ div.site {
 .widget-area ul.sidebar-navigation {
 	width: 90%;
 	position: relative;
-	margin: 20px auto;
+	margin: auto;
 }
 
 .widget-area #blog-panels {
@@ -3576,16 +3614,9 @@ div.site {
 	
 }	
 
-.widget-area .tagcloud a {
-	font-size:20px !important;
-	display:block;
-	margin:10px 10px 10px 15px;
-}
-
 body.homepage #blog-panels .whats-hot-block {
 	height:200px !important;
 	overflow:hidden;
-	
 	
 }
 
