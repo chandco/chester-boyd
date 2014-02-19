@@ -3589,18 +3589,21 @@ div.site {
 	padding: 2px;
 	padding-left: 7%;
 	width: 100%;
+	display: block;
 }
 
 #homepage-panels hgroup h3 {
 	font-size:14px;
-	padding: 2px 2px 2px 7%;
+	padding: 2px 2px 8px 7%;
 }
 
 #homepage-panels hgroup {
 	bottom: 0;
-	position: absolute;
+	position: static;
+	max-width: 100%;
 	width: 100%;
 	float: left;
+	margin-bottom: 40px;
 }
 
 .widget-area ul.sidebar-navigation {
