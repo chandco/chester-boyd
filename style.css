@@ -3492,6 +3492,15 @@ html, body {
 	
 }
 
+ul.food-menu-items li {
+	clear:both;
+	width:100%;
+}
+
+ul.food-menu-items.list-only li span h3 {
+	
+}
+
 .archive-title, .page-title, .widget-title, .entry-content th, .comment-content th {
 	font-size:20px;
 	font-size:2rem;
