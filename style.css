@@ -3597,6 +3597,10 @@ div.site {
 	overflow-x: hidden;
 }
 
+div#content {
+	padding:15px;
+}
+
 .archive-meta {
 	font-size:18px;
 	line-height:22px;
