@@ -223,6 +223,7 @@ ul.food-menu-items li {
 	position:relative;
 	list-style-type: none;
 	
+	min-height: 81px;
 }
 
 ul.food-menu-items li:nth-child(even) {
