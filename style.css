@@ -3484,6 +3484,7 @@ body.post-type-archive-venues h2.caption {
 
 body.single-venues h2.caption {
 	position:relative;	
+	padding: 2%;
 }
 
 body.post-type-archive-venues article.venues .venue-block img {
@@ -3504,9 +3505,10 @@ article.venues .venue-block h1.entry-title {
 	font-size:2.4rem;
 	display: block;
 	margin: 0;
-	padding: 5px 30px 5px 10px;
-	width: auto !important;
-	max-width: 100%;
+	padding: 1% 1% !important;
+	max-width: 98%;
+	width: 100%;
+	text-align: left;
 }
 
 body.post-type-archive-venues .entry-content {
@@ -3759,6 +3761,7 @@ header.entry-header hgroup {
 	top: 0;
 	float: left;
 	width: auto;
+	margin-top: 6px;
 }
 
 h1.entry-title {
