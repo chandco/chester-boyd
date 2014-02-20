@@ -33,7 +33,7 @@ function loop_through_menu_query( $args, $list = false )
 			$output .= 			"<h3>" . get_the_title() . "</h3>";
 		endif;
 		$output .= 		"</span>";
-		$output .= 			"<p>" . get_the_content() . "</p>";	
+		$output .= 			"<p>" . get_the_content() . get_edit_post_link() . "</p>";	
 		$output .= "</li>";
 	
 	
