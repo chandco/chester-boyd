@@ -3720,7 +3720,7 @@ body.homepage #blog-panels {
 	
 #blog-panels .whats-hot-block .whats-hot-image {
 	position: absolute;
-	overflow:visible;
+	overflow: hidden;
 	height: 264px;
 	width: 430px;
 	display: block;
@@ -3728,11 +3728,11 @@ body.homepage #blog-panels {
 }
 
 #blog-panels .whats-hot-block .whats-hot-image img {
-	width: 430px;
+	width: 100%;
 	max-width: 100%;
 	min-width: 0;
 	margin:0;
-	height: 264px;
+	height: auto;
 	position: absolute;
 	min-height: 0;
 }
