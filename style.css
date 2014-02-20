@@ -3637,6 +3637,17 @@ div.site {
 	overflow-x: hidden;
 }
 
+body.single-people div.people-quote {
+    width: 89%;
+	
+    left: 0;
+    margin: auto;
+    float: none;
+    padding: 1% 1% 1% 10%;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
 div#content {
 	padding:15px;
 }
