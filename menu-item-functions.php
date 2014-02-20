@@ -33,8 +33,13 @@ function loop_through_menu_query( $args, $list = false )
 			$output .= 			"<h3>" . get_the_title() . "</h3>";
 		endif;
 		$output .= 		"</span>";
-		$output .= 			"<p>" . get_the_content() . get_edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ) . "</p>";	
+		$output .= 			"<p>" . get_the_content() . "</p>";	
+		if (get_edit_post_link())
+		{
+			$output .= "<span class='edit-link'><a href='" . get_edit_post_link() . "'>Edit</a></span>";
+		}
 		$output .= "</li>";
+		
 	
 	
 		endwhile;
