@@ -107,9 +107,12 @@ body.post-type-archive-food .entry-header .entry-title {
 }
 
 body.single-food .entry-header .entry-title {
+    z-index: 222;
 }
 
-
+body.single-food div.cycle-slideshow {
+	border-bottom: solid 2px #e31936;
+}
 
 
 body.post-type-archive-food article.food {
