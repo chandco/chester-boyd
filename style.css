@@ -3587,7 +3587,8 @@ body.post-type-archive-people img.wp-post-image {
 	
 	width: 29%;
 	height: auto;
-	border-right: 2px solid #fff;
+	border-right: 5px solid #fff;
+	margin-bottom: 10px;
 }
 
 ul.food-menu-items li {
