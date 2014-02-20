@@ -629,9 +629,10 @@ body.post-type-archive-people article {
 }
 
 #ita-intro {
-    font-size: 24px;
+    font-size: 26px;
     width: 92%;
     padding: 4%;
+    font-size: 1.6rem;
 }
 
 
@@ -663,7 +664,6 @@ body.post-type-archive-people article {
     width: 100%;
     padding: 0%;
 	
-    text-align: justify;
     top:10px;
     margin: auto;
     display: block;
