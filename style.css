@@ -12,7 +12,7 @@ body.page-id-2 #homepage-panels:before {
 	background-position:center center;
 	background-size: cover;
 	position:absolute;
-	top:0;
+	bottom: 0;
 	right:0;
 	width: 200px;
 	height: 146px;
