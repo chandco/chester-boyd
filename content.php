@@ -7,6 +7,28 @@
  * @since Chester Boyd 1.0
  */
 ?>
+
+
+<?php if (is_archive() OR is_category()): ?>
+
+
+        
+
+<?php
+		
+		?>
+        <article class="news-archive">
+			<div class="whats-hot-block">
+	          <a href="<?php the_permalink(); ?>"><div class="whats-hot-image">
+	          	  <?php the_post_thumbnail('old-blog-thumb'); ?>
+                  <h3><?php the_title(); ?></h3>
+	          </div>
+              </a>
+            </div>
+           </article>
+
+<?php else: ?>
+
 	<article  id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
 		<div class="featured-post">
@@ -109,3 +131,5 @@
 			<?php endif; ?>
 		</footer><!-- .entry-meta -->
 	</article><!-- #post -->
+
+<?php endif; ?>

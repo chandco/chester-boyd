@@ -10,7 +10,7 @@
  */
 ?>
 
-	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+	<?php if ( is_active_sidebar( 'sidebar-1' ) OR is_active_sidebar('archive-sidebar') ) : ?>
 		<div id="secondary" class="widget-area" role="complementary">
         
         <?php
@@ -66,7 +66,11 @@
 		<?php
 		endif;  // is_archive();
 		
-		?>
-			<?php dynamic_sidebar( 'sidebar-1' ); ?>
+		
+        if ( is_archive() OR is_category() )
+        	dynamic_sidebar( 'archive-sidebar');
+		else
+			dynamic_sidebar( 'sidebar-1' ); 
+			?>
 		</div><!-- #secondary -->
 	<?php endif; ?>

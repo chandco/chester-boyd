@@ -12,6 +12,8 @@
  */
 
 get_header(); ?>
+
+
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
 
@@ -23,6 +25,9 @@ get_header(); ?>
 				<div class="archive-meta"><?php echo category_description(); ?></div>
 			<?php endif; ?>
 			</header><!-- .archive-header -->
+
+
+<div id="blog-panels">
 
 			<?php
 			/* Start the Loop */
@@ -36,6 +41,9 @@ get_header(); ?>
 
 			endwhile;
 
+?>
+</div>
+<?php
 			twentytwelve_content_nav( 'nav-below' );
 			?>
 

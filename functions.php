@@ -211,6 +211,16 @@ function twentytwelve_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+	
+	register_sidebar( array(
+		'name' => __( 'Archive Sidebar', 'twentytwelve' ),
+		'id' => 'archive-sidebar',
+		'description' => __( 'Appears on an ARCHIVE or CATEGORY page only and not on single posts or pages', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 
 	register_sidebar( array(
 		'name' => __( 'First Front Page Widget Area', 'twentytwelve' ),

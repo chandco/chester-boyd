@@ -25,7 +25,7 @@ get_header(); ?>
                 <div class="archive-meta">Welcome to our blog IS THIS OUR BLOG?</div>
                 
 </header>
-        
+        die();
 		<?php if ( have_posts() ) : ?>
 
 
