@@ -190,7 +190,7 @@ body.page-template-homepage-php .site-content {
 
 
 
-#blog-panels .whats-hot-block:hover h3 {
+#blog-panels .whats-hot-block:hover h3, html.touch #blog-panels .whats-hot-block h3 {
 	left:0%;
 }
 
