@@ -81,22 +81,7 @@ get_header(); ?>
 
 		</div><!-- #content -->
  
- <section id="ita-intro">
- 
-  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ITA_GROUP.png" class="ita-group"  width="200" />
-  
-  <div class="ita-logo">
- <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ITA_LOGO_DARKBG.png" width="200" />
- 
- <div class="ita-cta">
- To allow us to put our all into what we do best, delivering fine food and seamless service, all enquiries and reservations for Chester Boyd and our venues are handled by our dedicated sales partner, ITA*.
 
- 
-<a href='<?php echo get_site_url(); ?>/ita/'>Read More...</a>
-</div>
- </div>
- 
- </section>
         
         <div id="blog-panels">
         <h3>Latest News</h3>
