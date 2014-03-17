@@ -51,10 +51,6 @@ font-size: 1.6rem;
 
 }
 
-html.touch body {
-	background:#f00;
-}
-
 body.post-type-archive .site-content {
 	width:100%;
 	float:none;
