@@ -4,21 +4,7 @@
 @import url("link-styles.css");
 
 
-body.page-id-2 #homepage-panels:before {
-	content:"";
-	background:url(images/ita-hover.png);
-	background-image:url(images/ita-hover.png);
-	background-repeat:no-repeat;
-	background-position:center center;
-	background-size: cover;
-	position:absolute;
-	bottom: 0;
-	right:0;
-	width: 200px;
-	height: 146px;
-	z-index:222;	
-	max-width:324px;
-}
+
 
 .preload * {
   -webkit-transition: none !important;
