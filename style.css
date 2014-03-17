@@ -4,7 +4,21 @@
 @import url("link-styles.css");
 
 
-
+body.page-id-2 #homepage-panels:before {
+	content:"";
+	background:url(images/ita-hover.png);
+	background-image:url(images/ita-hover.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size: cover;
+	position:absolute;
+	bottom: 0;
+	right:0;
+	width: 200px;
+	height: 146px;
+	z-index:222;	
+	max-width:324px;
+}
 
 .preload * {
   -webkit-transition: none !important;
@@ -1448,10 +1462,10 @@ max-width: 70%;
 
 article.page .entry-header .entry-title {
 
-font-size: 30px;
+font-size:20px;
 
 
-font-size: 3rem;
+font-size: 2rem;
 line-height:1.2;
 font-weight:bold;
 background:#e31936;
@@ -3687,6 +3701,20 @@ body.homepage #blog-panels .whats-hot-block img {
 
 body.homepage #blog-panels {
 	text-align:center;
+}
+
+
+#blog-panels article.news-archive {
+	width:100%;
+	height:264px;
+}
+
+#blog-panels article.news-archive .whats-hot-block {
+	height:264px;
+}
+
+#blog-panels article.news-archive .whats-hot-image {
+	height: 264px;
 }
 
 #blog-panels .whats-hot-block, .widget-area #blog-panels .whats-hot-block {

@@ -621,8 +621,8 @@ body.archive #homepage-panels {
 #homepage-intro {
 	width: 100%;
 	display: block;
-	font-size: 20px;
-	font-size: 2rem;
+	font-size: 16px;
+	font-size: 1.6rem;
 	font-family: inherit;
 	color: #666666;
 	clear: both;
