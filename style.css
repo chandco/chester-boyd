@@ -100,7 +100,7 @@ text-align:left;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family:'BodoniSeventytwoITCW02- 737181';
+	font-family: 'BodoniSeventytwoITCW02- 737181';
 	font-weight: normal !important;
 }
 
@@ -1703,13 +1703,37 @@ margin:0 0 0 2.571428571rem;
 
 .entry-content blockquote,.comment-content blockquote {
 
+padding: 4%;
 
 
-margin-bottom:24px;
-margin-bottom:1.714285714rem;
-padding:24px;
-padding:1.714285714rem;
-font-style:italic;
+
+
+width: 86%;
+
+margin: 3.714286rem;
+
+
+
+
+font-size: larger;
+
+font-family: 'BodoniSeventytwoITCW02- 737181';  font-weight: normal !important;
+
+
+
+
+color: #e31936;
+
+
+
+font-style: normal;
+
+border-top: solid 2px #bbb;
+
+border-bottom: solid 2px #bbb;
+
+margin: 0 auto 2rem;
+
 }
 
 .entry-content blockquote p:last-child,.comment-content blockquote p:last-child {
