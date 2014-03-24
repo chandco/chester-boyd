@@ -303,6 +303,10 @@ footer #blog-panels .whats-hot-block h3 {
 
 #homepage-panels a, #blog-panels a {
 	text-shadow:none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 56.25%;
 }
 
 #homepage-panels .whats-hot-caption h3, #blog-panels .whats-hot-caption h3 {
@@ -339,13 +343,13 @@ footer #blog-panels .whats-hot-block h3 {
 	display:block;
 	
 
-	width: auto;
+	width: 100%;
 	
 	
 
-	height: 100%;
+	height: 0;
 
-	/* max-height: 138px; */
+	padding-bottom: 56.25%;
 	
 	top:0;
 	
@@ -390,16 +394,9 @@ footer #blog-panels .whats-hot-block h3 {
 
 
 #blog-panels .whats-hot-block img {
-	position: absolute;
-	width: 276px;
-	max-width: 200%;
-	min-width: 101%;
-	min-height: 100%;
-	height: auto;
-	left:0;
-	top:0;
-	right: 0;
-	bottom: 0;
+	position: relative;
+	width: 100%;
+	height: 100%;
 	margin: auto;
 	-webkit-transform: scale(1.01,1.01);
 	transform: scale(1.01,1.01);
