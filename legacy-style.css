@@ -3739,14 +3739,14 @@ body.homepage #blog-panels {
 }
 
 #blog-panels .whats-hot-block, .widget-area #blog-panels .whats-hot-block {
-	width: 98%;
-	max-width: 430px;
 	float: none;
 	text-align: center;
 	overflow: visible;;
 	display: block;
 	margin: auto;
-	height: 264px;
+	height: 0;
+	width: 100%;
+	padding-bottom:56.25%;
 	left: 0;
 	right: 0;
 	position: relative;
@@ -3756,10 +3756,10 @@ body.homepage #blog-panels {
 #blog-panels .whats-hot-block .whats-hot-image {
 	position: absolute;
 	overflow: hidden;
-	height: 264px;
-	width: 430px;
+	height: 0;
+	width: 100%;
+	padding-bottom:56.25%;
 	display: block;
-	max-width: 430px;
 }
 
 #blog-panels .whats-hot-block .whats-hot-image img {
