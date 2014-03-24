@@ -2,7 +2,6 @@
 @import url("food.css");
 @import url("people.css");
 @import url("link-styles.css");
-@import url("cb.css");
 @import url("legacy-style.css");
 /*
 Theme Name: Chester Boyd
@@ -13,3 +12,31 @@ Description: Chester Boyd 2014 theme
 Version: 1.0
 
 */
+/* LESS Document */
+#blog-panels article.news-archive {
+  margin-bottom: 10px;
+  width: 46%;
+  float: left;
+}
+#blog-panels article.news-archive .whats-hot-block {
+  display: block;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  float: none;
+  overflow: hidden;
+  height: 170px;
+  background: #000000;
+  border-bottom: solid 3px #e31936;
+  box-shadow: -3px 2px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -3px 2px 2px rgba(0, 0, 0, 0.5);
+}
+#blog-panels article.news-archive .whats-hot-block h3 {
+  left: 0;
+}
+#blog-panels article.news-archive:nth-child(2n) {
+  clear: right;
+}
+#blog-panels article.news-archive:nth-child(2n+1) {
+  margin-right: 4%;
+}
