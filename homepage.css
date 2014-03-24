@@ -304,10 +304,10 @@ footer #blog-panels .whats-hot-block h3 {
 
 #homepage-panels a, #blog-panels a {
 	text-shadow:none;
-	display: block;
-	width: 100%;
-	height: 0;
-	padding-bottom: 56.25%;
+	/* display: block; */
+	/* width: 100%; */
+	/* height: 0; */
+	/* padding-bottom: 56.25%; */
 }
 
 #homepage-panels .whats-hot-caption h3, #blog-panels .whats-hot-caption h3 {
