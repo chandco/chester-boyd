@@ -33,6 +33,9 @@ Version: 1.0
 }
 #blog-panels article.news-archive .whats-hot-block h3 {
   left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 #blog-panels article.news-archive:nth-child(2n) {
   clear: right;
