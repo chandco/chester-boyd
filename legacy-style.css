@@ -3710,15 +3710,7 @@ div#content {
 	
 }	
 
-body.homepage #blog-panels .whats-hot-block {
-	height:200px !important;
-	overflow:hidden;
-	
-}
 
-body.homepage #blog-panels .whats-hot-block img {
-	
-}
 
 body.homepage #blog-panels {
 	text-align:center;
@@ -3729,13 +3721,6 @@ body.homepage #blog-panels {
 	width:100%;
 }
 
-#blog-panels article.news-archive .whats-hot-block {
-	height:264px;
-}
-
-#blog-panels article.news-archive .whats-hot-image {
-	height: 264px;
-}
 
 #blog-panels .whats-hot-block, .widget-area #blog-panels .whats-hot-block {
 	float: none;
