@@ -40,6 +40,19 @@ Version: 1.0
   top: initial;
   max-width: 100%;
 }
+@media screen and (max-width: 600px) {
+  #blog-panels article.news-archive {
+    width: 100%;
+  }
+  #blog-panels article.news-archive h3 {
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    top: initial;
+    max-width: 100%;
+  }
+}
 #blog-panels article.news-archive:nth-child(2n) {
   clear: right;
 }
