@@ -384,7 +384,8 @@ footer #blog-panels .whats-hot-block h3 {
 	position:relative;
 	float: left;
 	overflow: hidden;
-	height: 170px;
+	padding-bottom: 16.88%;
+	height: 0;
 	background: #000000;
 	border-bottom: solid 3px #e31936;
 	box-shadow: -3px 2px 2px rgba(0,0,0,0.5);
