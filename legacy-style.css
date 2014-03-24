@@ -3458,19 +3458,18 @@ body.single-people header.entry-header hgroup h1 {
 
 	
 .widget-area .whats-hot-block img {
-	display:none;
+	/* display:none; */
 }	
 	
 .widget-area div#blog-panels.widget-recent-posts .whats-hot-block {
-	display:inline-block;
-	height: auto;
-	margin: 10px 0 !important;
+	/* display:inline-block; */
+	/* height: auto; */
+	/* margin: 10px 0 !important; */
 }	
 
 .widget-area div#blog-panels.widget-recent-posts .whats-hot-block h3 {
 	width: auto;
 	display:block;
-	position:static !important;
 	max-width: 100%;
 }
 	
@@ -3710,7 +3709,15 @@ div#content {
 	
 }	
 
+body.homepage #blog-panels .whats-hot-block {
+	height:200px !important;
+	overflow:hidden;
+	
+}
 
+body.homepage #blog-panels .whats-hot-block img {
+	
+}
 
 body.homepage #blog-panels {
 	text-align:center;
@@ -3721,6 +3728,13 @@ body.homepage #blog-panels {
 	width:100%;
 }
 
+#blog-panels article.news-archive .whats-hot-block {
+	height:264px;
+}
+
+#blog-panels article.news-archive .whats-hot-image {
+	height: 264px;
+}
 
 #blog-panels .whats-hot-block, .widget-area #blog-panels .whats-hot-block {
 	float: none;
@@ -3738,8 +3752,8 @@ body.homepage #blog-panels {
 
 	
 #blog-panels .whats-hot-block .whats-hot-image {
-	position: absolute;
-	overflow: hidden;
+	position: relative;
+	/* overflow: hidden; */
 	height: 0;
 	width: 100%;
 	padding-bottom:56.25%;
@@ -3754,6 +3768,8 @@ body.homepage #blog-panels {
 	height: auto;
 	position: absolute;
 	min-height: 0;
+	left: 0;
+	top: 0;
 }
 
 #blog-panels .whats-hot-block h3 {

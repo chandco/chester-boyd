@@ -292,7 +292,8 @@ footer #blog-panels .whats-hot-block h3 {
 	float:none;
 	clear:both;
 	margin: 1rem 0 !important;
-	height:135px;
+	height: 0;
+	padding-bottom: 56.25%;
 }
 
 
@@ -305,7 +306,7 @@ footer #blog-panels .whats-hot-block h3 {
 	text-shadow:none;
 	display: block;
 	width: 100%;
-	height: 100%;
+	height: 0;
 	padding-bottom: 56.25%;
 }
 
@@ -424,7 +425,7 @@ footer #blog-panels .whats-hot-block h3 {
 }
 
 #blog-panels div.whats-hot-block:after {
-	content: "";
+	/* content: ""; */
 	display:block;
 	position:absolute;
 	width: 90%;
