@@ -37,8 +37,8 @@ Version: 1.0
   position: absolute;
   bottom: 0;
   width: 100%;
-  top: auto;
   max-width: 100%;
+  top: auto;
 }
 @media screen and (max-width: 600px) {
   #blog-panels article.news-archive {
