@@ -37,7 +37,7 @@ Version: 1.0
   position: absolute;
   bottom: 0;
   width: 100%;
-  top: initial;
+  top: auto;
   max-width: 100%;
 }
 @media screen and (max-width: 600px) {
