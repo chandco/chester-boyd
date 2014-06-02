@@ -59,3 +59,34 @@ Version: 1.0
 #blog-panels article.news-archive:nth-child(2n+1) {
   margin-right: 4%;
 }
+
+
+
+.people-intro { display: block;
+clear: both;
+float: none;
+min-height: 155px;
+position:relative;
+ }
+
+.people-intro h2 { 
+	
+background: #B3B3B3;
+color: #fff;
+font-size: 22px;
+width: auto;
+padding: 10px 20px 10px 20px;
+display:inline-block;
+position: absolute;
+top: 0;
+left: 240px;
+
+}
+
+.people-intro img {
+
+position:relative;
+min-width:240px;
+z-index:1;
+
+}
