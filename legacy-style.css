@@ -2899,7 +2899,7 @@ h1.entry-title.post-thumbnail-header {
 	left: 0;
 }
 
-body.postid-868 h1.entry-title.post-thumbnail-header { top:initial; bottom:10px; }
+body.postid-868 h1.entry-title.post-thumbnail-header { top:inherit; bottom:10px; }
 
 header.entry-header {
 	position:relative;
