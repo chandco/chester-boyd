@@ -1,5 +1,18 @@
 /* LESS Document */
-
+.whats-hot-image.video:after {
+			content: "";
+			background: url(images/video-overlay.png);
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100%;
+			background-size: 100% 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			border: 5px solid #fff;
+			opacity: .8;
+		}
 
 
 #blog-panels article.news-archive {
@@ -31,20 +44,7 @@
 			top: auto;
 		}
 
-		&.video:after {
-			content: "";
-			background: url(images/video-overlay.png);
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 100%;
-			background-size: 100% 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 2;
-			border: 5px solid #fff;
-			opacity: .8;
-		}
+		
 		
 	}
 	
