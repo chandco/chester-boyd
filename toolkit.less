@@ -1,0 +1,54 @@
+
+/*
+
+<a href='#' class='cta'>
+	<strong>Big CTA Text</strong>
+
+	Small CTA text
+</a>
+*/
+
+.bodoni {
+	font-family: 'BodoniSeventytwoITCW02- 737181';
+	font-weight: normal !important;
+}
+
+.gillsans {
+	font-family: 'Gill Sans W04 Light',Helvetica,Arial,sans-serif;
+}
+
+.cta {
+	background: @grey;
+	border-bottom: @red 3px solid;
+
+
+	strong {
+
+		font-size: 20px;
+		font-size: 2rem;
+		.bodoni();
+		color: #fff;
+	}
+
+	color: @red;
+	.gillsans();
+
+
+
+
+	padding-right: 20%;	
+
+
+
+	position: relative;
+	&:after {
+		&:extend(.fa);
+		&:extend(.fa-caret-right);
+		position: absolute;
+		width: 20%;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+}
