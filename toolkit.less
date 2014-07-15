@@ -8,6 +8,20 @@
 </a>
 */
 
+
+.fap(@content) {
+  content: @content;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
 .bodoni {
 	font-family: 'BodoniSeventytwoITCW02- 737181';
 	font-weight: normal !important;
@@ -41,9 +55,10 @@
 
 
 	position: relative;
+	
+
 	&:after {
-		&:extend(.fa);
-		&:extend(.fa-caret-right);
+		.fap(@fa-var-caret-right);
 		position: absolute;
 		width: 20%;
 		right: 0;
