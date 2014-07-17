@@ -84,7 +84,7 @@ get_header(); ?>
 
         
         <div id="blog-panels">
-        <h3>Latest News</h3>
+        <h3>Features</h3>
 
 <?php
 		global $post;
