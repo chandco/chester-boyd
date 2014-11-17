@@ -2895,8 +2895,11 @@ body.archive h1.entry-title {
 h1.entry-title.post-thumbnail-header {
 	z-index:1;
 	position:absolute;
-	top: 0px;
+	
+	bottom: 10px;
 	left: 0;
+
+
 }
 
 
