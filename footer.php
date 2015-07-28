@@ -14,7 +14,7 @@
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">
 		For all enquiries please contact the ITA team: <a href='http://www.itavenues.co.uk/' class="no-hover">www.itavenues.co.uk</a> | <a href='mailto:sales@itavenues.co.uk'>sales@itavenues.co.uk</a> | 0207 392 3998 | 
-	© Chester Boyd 2013
+	© Chester Boyd <?php echo date("Y"); ?>
 		</div><!-- .site-info -->
 		<div class="site-info">
 		<?php echo do_shortcode( "[policy_links]" ); ?>
